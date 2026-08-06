@@ -1,0 +1,188 @@
+{
+    "Cara": {
+        "plaene": {
+            "Pferd und Reis": [
+                {
+                    "Zutat": "Pferd Fleisch, roh",
+                    "Menge": 400.0,
+                    "Aktiv": true
+                },
+                {
+                    "Zutat": "Reis poliert, roh",
+                    "Menge": 40.0,
+                    "Aktiv": true
+                },
+                {
+                    "Zutat": "Gem\u00fcsefenchel roh",
+                    "Menge": 50.0,
+                    "Aktiv": true
+                },
+                {
+                    "Zutat": "Zucchini roh",
+                    "Menge": 50.0,
+                    "Aktiv": true
+                },
+                {
+                    "Zutat": "Karotte/M\u00f6hre, roh",
+                    "Menge": 90.0,
+                    "Aktiv": true
+                },
+                {
+                    "Zutat": "Hanf\u00f6l",
+                    "Menge": 5.0,
+                    "Aktiv": true
+                },
+                {
+                    "Zutat": "Napfcheck Novomineral Balance",
+                    "Menge": 4.0,
+                    "Aktiv": true
+                },
+                {
+                    "Zutat": "Napfcheck Novomineral Sensitive",
+                    "Menge": 4.0,
+                    "Aktiv": true
+                },
+                {
+                    "Zutat": "BARF Kultur Algen\u00f6l",
+                    "Menge": 2.8,
+                    "Aktiv": true
+                }
+            ],
+            "Pferd und Kartoffel": [
+                {
+                    "Zutat": "Pferd Fleisch, roh",
+                    "Menge": 100.0,
+                    "Aktiv": true
+                },
+                {
+                    "Zutat": "Kartoffel gesch\u00e4lt, gekocht",
+                    "Menge": 100.0,
+                    "Aktiv": true
+                }
+            ]
+        },
+        "geb_datum": "2017-09-01",
+        "altersgruppe": "> 7 Jahre",
+        "energiebedarf": "kastriert (- 20%)",
+        "gewicht": 27.0,
+        "zielgewicht": 27.0,
+        "verdaulichkeit": "Gekocht",
+        "angezeigte_spalten": [
+            "Energie [kcal/100g]",
+            "Energie [MJ/100g]",
+            "Rohprotein [g/100g]",
+            "vRP",
+            "Rohfett [g/100g]",
+            "NfE  [g/100g]",
+            "Rohfaser [g/100g]",
+            "Rohasche [g/100g]",
+            "Wasser [g/100g]",
+            "TS",
+            "Calcium [mg/100g]",
+            "Phosphor [mg/100g]",
+            "Magnesium [mg/100g]",
+            "Natrium [mg/100g]",
+            "Kalium [mg/100g]",
+            "Chlorid [mg]",
+            "Eisen [mg/100g]",
+            "Zink [mg/100g]",
+            "Selen [\u00b5g/100g]",
+            "Kupfer [\u00b5g/100g]",
+            "Mangan [\u00b5g/100g]",
+            "Jod [\u00b5g/100g]",
+            "Schwefel [mg/100g]",
+            "Vitamin D3 [\u00b5g/100g]",
+            "Vitamin E [mg/100g]",
+            "Vitamin A [\u00b5g/100g]",
+            "Vitamin B1 [mg/100g]",
+            "Vitamin B2 [mg/100g]",
+            "Vit. B3/Niacin [mg/100g]",
+            "Vitamin B6 [\u00b5g/100g]",
+            "Vitamin B12 [\u00b5g/100g]",
+            "Vitamin C [mg/100g]",
+            "Vitamin K [\u00b5g/100g]",
+            "Fols\u00e4ure [\u00b5g/100g]",
+            "Biotin [\u00b5g/100g]",
+            "Lactose [g/100g]",
+            "Omega-3, gesamt [g/100g]",
+            "EPA [g/100g]",
+            "DHA [g/100g]",
+            "Omega-6, gesamt [g/100g]",
+            "Linols\u00e4ure [g/100g]",
+            "Arginin [g/100g]",
+            "Cystein [g/100g]",
+            "Histidin [g/100g]",
+            "Lysin [g/100g]",
+            "Methionin [g/100g]"
+        ]
+    },
+    "Lui": {
+        "plaene": {
+            "Pferd und Reisnudeln": [
+                {
+                    "Zutat": "Pferd Fleisch, roh",
+                    "Menge": 400.0,
+                    "Aktiv": true
+                },
+                {
+                    "Zutat": "Reisnudeln roh",
+                    "Menge": 50.0,
+                    "Aktiv": true
+                }
+            ]
+        },
+        "geb_datum": "2021-03-21",
+        "altersgruppe": "3-7 Jahre",
+        "energiebedarf": "kastriert (- 20%)",
+        "gewicht": 29.0,
+        "zielgewicht": 29.0,
+        "verdaulichkeit": "Gekocht",
+        "angezeigte_spalten": [
+            "Energie [MJ/100g]",
+            "Rohprotein [g/100g]",
+            "vRP",
+            "Rohfett [g/100g]",
+            "NfE  [g/100g]",
+            "Rohfaser [g/100g]",
+            "Rohasche [g/100g]",
+            "Wasser [g/100g]",
+            "TS",
+            "Calcium [mg/100g]",
+            "Phosphor [mg/100g]",
+            "Magnesium [mg/100g]",
+            "Natrium [mg/100g]",
+            "Kalium [mg/100g]",
+            "Chlorid [mg]",
+            "Eisen [mg/100g]",
+            "Zink [mg/100g]",
+            "Selen [\u00b5g/100g]",
+            "Kupfer [\u00b5g/100g]",
+            "Mangan [\u00b5g/100g]",
+            "Jod [\u00b5g/100g]",
+            "Schwefel [mg/100g]",
+            "Vitamin D3 [\u00b5g/100g]",
+            "Vitamin E [mg/100g]",
+            "Vitamin A [\u00b5g/100g]",
+            "Vitamin B1 [mg/100g]",
+            "Vitamin B2 [mg/100g]",
+            "Vit. B3/Niacin [mg/100g]",
+            "Vitamin B6 [\u00b5g/100g]",
+            "Vitamin B12 [\u00b5g/100g]",
+            "Vitamin C [mg/100g]",
+            "Vitamin K [\u00b5g/100g]",
+            "Fols\u00e4ure [\u00b5g/100g]",
+            "Biotin [\u00b5g/100g]",
+            "Lactose [g/100g]",
+            "Omega-3, gesamt [g/100g]",
+            "EPA [g/100g]",
+            "DHA [g/100g]",
+            "Omega-6, gesamt [g/100g]",
+            "Linols\u00e4ure [g/100g]",
+            "Arginin [g/100g]",
+            "Cystein [g/100g]",
+            "Histidin [g/100g]",
+            "Lysin [g/100g]",
+            "Methionin [g/100g]"
+        ]
+    }
+}
