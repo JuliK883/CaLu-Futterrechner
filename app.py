@@ -41,7 +41,7 @@ if not st.session_state['eingeloggt']:
         st.error(f"Konnte die Zugangsdaten nicht laden. Fehler: {e}")
         st.stop()
 
-    # Eingabefelder für den Nutzer
+   # Eingabefelder für den Nutzer
 eingabe_name = st.text_input("Benutzername")
 eingabe_passwort = st.text_input("Passwort", type="password")
 
