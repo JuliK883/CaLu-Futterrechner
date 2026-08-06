@@ -45,10 +45,11 @@ if not st.session_state['eingeloggt']:
     eingabe_name = st.text_input("Benutzername")
     eingabe_passwort = st.text_input("Passwort", type="password")
     
-    if st.button("Einloggen"):
-        if eingabe_name in df_logins['Benutzername'].values:
-            user_row = df_logins[df_logins['Benutzername'] == eingabe_name].iloc[0]
-            
+    if str(user_row['Passwort Hash']) == eingabe_passwort and str(user_row['Zugang aktiv']).strip().lower() == 'ja':
+                st.session_state['eingeloggt'] = True
+                st.session_state['aktiver_nutzer'] = eingabe_name
+                st.rerun() 
+            else:
             if str(user_row['Passwort Hash']) == eingabe_passwort and str(user_row['Zugang aktiv']).strip().lower() == 'ja':
                 st.session_state['eingeloggt'] = True
                 st.rerun() 
@@ -67,16 +68,21 @@ if not st.session_state['eingeloggt']:
 st.title("🐾 CaLu Futterrechner 🐾")
 
 # --- DATENBANK FUNKTIONEN ---
-DB_FILE = "calu_profile.json"
+def get_db_file():
+    nutzer = st.session_state.get('aktiver_nutzer', 'gast')
+    nutzer_clean = "".join(c for c in nutzer if c.isalnum())
+    return f"calu_profile_{nutzer_clean}.json"
 
 def lade_db():
-    if os.path.exists(DB_FILE):
-        with open(DB_FILE, "r", encoding="utf-8") as f:
+    db_file = get_db_file()
+    if os.path.exists(db_file):
+        with open(db_file, "r", encoding="utf-8") as f:
             return json.load(f)
     return {}
 
 def speichere_db(daten):
-    with open(DB_FILE, "w", encoding="utf-8") as f:
+    db_file = get_db_file()
+    with open(db_file, "w", encoding="utf-8") as f:
         json.dump(daten, f, indent=4)
 
 # Pfad zur Excel-Datei
