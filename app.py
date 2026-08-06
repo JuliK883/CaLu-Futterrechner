@@ -5,6 +5,12 @@ import plotly.express as px
 import json
 import os
 import tempfile
+import plotly.io as pio
+pio.kaleido.scope.chromium_args = (
+    "--headless",
+    "--no-sandbox",
+    "--disable-gpu",
+)
 
 # Versuch, FPDF für den PDF-Export zu laden
 try:
