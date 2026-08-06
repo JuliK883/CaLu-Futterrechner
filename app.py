@@ -45,18 +45,18 @@ if not st.session_state['eingeloggt']:
     eingabe_name = st.text_input("Benutzername")
     eingabe_passwort = st.text_input("Passwort", type="password")
     
-    if str(user_row['Passwort Hash']) == eingabe_passwort and str(user_row['Zugang aktiv']).strip().lower() == 'ja':
-                st.session_state['eingeloggt'] = True
-                st.session_state['aktiver_nutzer'] = eingabe_name
-                st.rerun() 
-            else:
-            if str(user_row['Passwort Hash']) == eingabe_passwort and str(user_row['Zugang aktiv']).strip().lower() == 'ja':
-                st.session_state['eingeloggt'] = True
-                st.rerun() 
-            else:
-                st.error("Passwort falsch oder Zugang deaktiviert.")
+    if st.button("Einloggen"):
+    if eingabe_name in df_logins['Benutzername'].values:
+        user_row = df_logins[df_logins['Benutzername'] == eingabe_name].iloc[0]
+        
+        if str(user_row['Passwort Hash']) == eingabe_passwort and str(user_row['Zugang aktiv']).strip().lower() == 'ja':
+            st.session_state['eingeloggt'] = True
+            st.session_state['aktiver_nutzer'] = eingabe_name
+            st.rerun() 
         else:
-            st.error("Benutzername nicht gefunden.")
+            st.error("Passwort falsch oder Zugang deaktiviert.")
+    else:
+        st.error("Benutzername nicht gefunden.")
     
     # Stoppt das Skript hier, wenn der Login noch nicht erfolgreich war
     st.stop()
