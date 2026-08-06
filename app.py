@@ -61,10 +61,6 @@ if st.button("Einloggen"):
 # Stoppt das Skript hier, wenn der Login noch nicht erfolgreich war
 st.stop()
     
-    # Stoppt das Skript hier, wenn der Login noch nicht erfolgreich war
-    st.stop()
-
-
 # ==========================================
 # 2. HAUPT-APP (CaLu Futterrechner)
 # ==========================================
