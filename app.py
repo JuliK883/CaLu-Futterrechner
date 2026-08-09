@@ -6,9 +6,11 @@ import json
 import os
 import tempfile
 import plotly.io as pio
+# Konfiguration für den PDF-Grafik-Export in der Cloud
 pio.kaleido.scope.chromium_args = (
     "--headless",
     "--no-sandbox",
+    "--disable-dev-shm-usage",
     "--disable-gpu",
 )
 
