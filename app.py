@@ -6,12 +6,6 @@ import json
 import os
 import tempfile
 import plotly.io as pio
-pio.kaleido.scope.chromium_args = (
-    "--headless",
-    "--no-sandbox",
-    "--disable-dev-shm-usage",
-    "--disable-gpu",
-)
 
 # Versuch, FPDF für den PDF-Export zu laden
 try:
